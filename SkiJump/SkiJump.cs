@@ -7,14 +7,16 @@ namespace SkiJump
 {
     public class SkiJump
     {
-        public static Double Lenght(Double length, Double kpoint)
+        public static Double Lenght(Double length, Double cpoint)
         {
-            Double difference = length - kpoint;
+            //Calculate points for jump length
+            Double difference = length - cpoint;
             Double points = 60 + difference * 1.8;
             return points;
         }
         public static Double Style(Double first, Double second, Double third, Double forth, Double fifth)
         {
+            //Calculate style points
             Double[] arr = new Double[] { first, second, third, forth, fifth };
             Double sum = arr.Sum();
             Double min = arr.Min();
@@ -22,15 +24,17 @@ namespace SkiJump
             Double points = sum - min - max;
             return points;
         }
-        public static Double Wind(Double wind, Double kpoint)
+        public static Double Wind(Double wind, Double cpoint)
         {
-            Double rough = wind * (kpoint - 36) / 20;
+            //Calculate the effect of the wind to the score
+            Double rough = wind * (cpoint - 36) / 20;
             Double r = rough * 2;
             Double points = 1.8 * (Math.Round(r, MidpointRounding.ToEven) / 2);
             return points;
         }
         public static Double Stage(Double height)
         {
+            //Calculate the effect of the stage to the score
             Double points = -height * 5 * 1.8;
             return points;
         }

@@ -49,31 +49,31 @@ namespace SkiJump {
         protected global::System.Web.UI.WebControls.RegularExpressionValidator lengthinputValidator;
         
         /// <summary>
-        /// kpoint control.
+        /// cpoint control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox kpoint;
+        protected global::System.Web.UI.WebControls.TextBox cpoint;
         
         /// <summary>
-        /// kpointFieldValidator control.
+        /// cpointFieldValidator control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator kpointFieldValidator;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator cpointFieldValidator;
         
         /// <summary>
-        /// kpointInputValidator control.
+        /// cpointInputValidator control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RegularExpressionValidator kpointInputValidator;
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator cpointInputValidator;
         
         /// <summary>
         /// wind control.
@@ -281,5 +281,14 @@ namespace SkiJump {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label Result;
+        
+        /// <summary>
+        /// ValidationSummary control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ValidationSummary ValidationSummary;
     }
 }

@@ -30,31 +30,31 @@
             <tr>
                 <td class="auto-style2">
                     <asp:TextBox ID="length" runat="server"></asp:TextBox>
-                    <asp:RequiredFieldValidator ID="lengthValidator" runat="server" ControlToValidate="length" Display="Dynamic" ErrorMessage="Field Required" Text="*" ValidationGroup="AllValidators"></asp:RequiredFieldValidator>
-                    <asp:RegularExpressionValidator ID="lengthinputValidator" runat="server" ControlToValidate="length" Display="Dynamic" ErrorMessage="Invalid Input" Text="*" ValidationGroup="AllValidators" ValidationExpression="\d{1,3}[,.]\d{1,2}|\d{1,3}"></asp:RegularExpressionValidator>
+                    <asp:RequiredFieldValidator ID="lengthValidator" runat="server" ControlToValidate="length" Display="Dynamic" ErrorMessage="*Field Required" Text="*" ForeColor="Red" ValidationGroup="AllValidators"></asp:RequiredFieldValidator>
+                    <asp:RegularExpressionValidator ID="lengthinputValidator" runat="server" ControlToValidate="length" Display="Dynamic" ErrorMessage="**Invalid Input" Text="**" ForeColor="Red" ValidationGroup="AllValidators" ValidationExpression="\d{1,3}[,.]\d{1,2}|\d{1,3}"></asp:RegularExpressionValidator>
                 </td>
                 <td class="auto-style2">
-                    <asp:TextBox ID="kpoint" runat="server"></asp:TextBox>
-                    <asp:RequiredFieldValidator ID="kpointFieldValidator" runat="server" ControlToValidate="kpoint" Display="Dynamic" ErrorMessage="Field Required" Text="*" ValidationGroup="AllValidators"></asp:RequiredFieldValidator>
-                    <asp:RegularExpressionValidator ID="kpointInputValidator" runat="server" ControlToValidate="kpoint" Display="Dynamic" ErrorMessage="Invalid Input" Text="*" ValidationGroup="AllValidators" ValidationExpression="\d{1,3}[,.]\d{1,2}|\d{1,3}"></asp:RegularExpressionValidator>
+                    <asp:TextBox ID="cpoint" runat="server"></asp:TextBox>
+                    <asp:RequiredFieldValidator ID="cpointFieldValidator" runat="server" ControlToValidate="cpoint" Display="Dynamic" ErrorMessage="*Field Required" Text="*" ForeColor="Red" ValidationGroup="AllValidators"></asp:RequiredFieldValidator>
+                    <asp:RegularExpressionValidator ID="cpointInputValidator" runat="server" ControlToValidate="cpoint" Display="Dynamic" ErrorMessage="**Invalid Input" Text="**" ForeColor="Red" ValidationGroup="AllValidators" ValidationExpression="\d{1,3}[,.]\d{1,2}|\d{1,3}"></asp:RegularExpressionValidator>
                 </td>
                 <td class="auto-style2">
                     <asp:TextBox ID="wind" runat="server"></asp:TextBox>
-                    <asp:RequiredFieldValidator ID="windFieldValidator" runat="server" ControlToValidate="wind" Display="Dynamic" ErrorMessage="Field Required" Text="*" ValidationGroup="AllValidators"></asp:RequiredFieldValidator>
-                    <asp:RegularExpressionValidator ID="windinputFieldValidator" runat="server" ControlToValidate="wind" Display="Dynamic" ErrorMessage="Invalid Input" Text="*" ValidationGroup="AllValidators" ValidationExpression="\d{1,2}[,.]\d{1,2}"></asp:RegularExpressionValidator>
+                    <asp:RequiredFieldValidator ID="windFieldValidator" runat="server" ControlToValidate="wind" Display="Dynamic" ErrorMessage="*Field Required" Text="*" ForeColor="Red" ValidationGroup="AllValidators"></asp:RequiredFieldValidator>
+                    <asp:RegularExpressionValidator ID="windinputFieldValidator" runat="server" ControlToValidate="wind" Display="Dynamic" ErrorMessage="**Invalid Input" Text="**" ForeColor="Red" ValidationGroup="AllValidators" ValidationExpression="(\*|\-)?\d{1,2}[,.]\d{1,2}|(\*|\-)?\d{1,2}"></asp:RegularExpressionValidator>
 
                 </td>
                 <td class="auto-style2">
                     <asp:TextBox ID="stage" runat="server"></asp:TextBox>
-                    <asp:RequiredFieldValidator ID="stageFieldValidator" runat="server" ControlToValidate="stage" Display="Dynamic" ErrorMessage="Field Required" Text="*" ValidationGroup="AllValidators"></asp:RequiredFieldValidator>
-                    <asp:RegularExpressionValidator ID="stageinputFieldValidator" runat="server" ControlToValidate="stage" Display="Dynamic" ErrorMessage="Invalid Input" Text="*" ValidationGroup="AllValidators" ValidationExpression="\d{1,2}[,.]\d{1,2}|\d{1,2}"></asp:RegularExpressionValidator>
+                    <asp:RequiredFieldValidator ID="stageFieldValidator" runat="server" ControlToValidate="stage" Display="Dynamic" ErrorMessage="*Field Required" Text="*" ForeColor="Red" ValidationGroup="AllValidators"></asp:RequiredFieldValidator>
+                    <asp:RegularExpressionValidator ID="stageinputFieldValidator" runat="server" ControlToValidate="stage" Display="Dynamic" ErrorMessage="**Invalid Input" Text="**" ForeColor="Red" ValidationGroup="AllValidators" ValidationExpression="(\*|\-)?\d{1,2}[,.]\d{1,2}|(\*|\-)?\d{1,2}"></asp:RegularExpressionValidator>
 
                 </td>
                 <td class="auto-style2">
                     &nbsp;</td>
             </tr>
             <tr>
-                <td class="auto-style2">Stylepisteet<br />
+                <td class="auto-style2">Tyylipisteet<br />
                     Tuomari 1</td>
                 <td class="auto-style2">
                     <br />
@@ -72,32 +72,32 @@
             <tr>
                 <td class="auto-style2">
                     <asp:TextBox ID="judge1" runat="server"></asp:TextBox>
-                    <asp:RequiredFieldValidator ID="judge1FieldValidator" runat="server" ControlToValidate="judge1" Display="Dynamic" ErrorMessage="Field Required" Text="x" ValidationGroup="AllValidators"></asp:RequiredFieldValidator>
-                    <asp:RegularExpressionValidator ID="judge1inputFieldValidator" runat="server" ControlToValidate="judge1" Display="Dynamic" ErrorMessage="Invalid Input" Text="*" ValidationGroup="AllValidators" ValidationExpression="\d{1,2}[,.]\d{1,2}|\d{1,2}"></asp:RegularExpressionValidator>
+                    <asp:RequiredFieldValidator ID="judge1FieldValidator" runat="server" ControlToValidate="judge1" Display="Dynamic" ErrorMessage="*Field Required" Text="*" ForeColor="Red" ValidationGroup="AllValidators"></asp:RequiredFieldValidator>
+                    <asp:RegularExpressionValidator ID="judge1inputFieldValidator" runat="server" ControlToValidate="judge1" Display="Dynamic" ErrorMessage="**Invalid Input" Text="**" ForeColor="Red" ValidationGroup="AllValidators" ValidationExpression="\d{1,2}[,.]\d{1,2}|\d{1,2}"></asp:RegularExpressionValidator>
 
                 </td>
                 <td class="auto-style2">
                     <asp:TextBox ID="judge2" runat="server"></asp:TextBox>
-                    <asp:RequiredFieldValidator ID="judge2FieldValidator" runat="server" ControlToValidate="judge2" Display="Dynamic" ErrorMessage="Field Required" Text="*" ValidationGroup="AllValidators"></asp:RequiredFieldValidator>
-                    <asp:RegularExpressionValidator ID="judge2inputFieldValidator" runat="server" ControlToValidate="judge2" Display="Dynamic" ErrorMessage="Invalid Input" Text="*" ValidationGroup="AllValidators" ValidationExpression="\d{1,2}[,.]\d{1,2}|\d{1,2}"></asp:RegularExpressionValidator>
+                    <asp:RequiredFieldValidator ID="judge2FieldValidator" runat="server" ControlToValidate="judge2" Display="Dynamic" ErrorMessage="*Field Required" Text="*" ForeColor="Red" ValidationGroup="AllValidators"></asp:RequiredFieldValidator>
+                    <asp:RegularExpressionValidator ID="judge2inputFieldValidator" runat="server" ControlToValidate="judge2" Display="Dynamic" ErrorMessage="**Invalid Input" Text="**" ForeColor="Red" ValidationGroup="AllValidators" ValidationExpression="\d{1,2}[,.]\d{1,2}|\d{1,2}"></asp:RegularExpressionValidator>
 
                 </td>
                 <td class="auto-style2">
                     <asp:TextBox ID="judge3" runat="server"></asp:TextBox>
-                    <asp:RequiredFieldValidator ID="judge3FieldValidator" runat="server" ControlToValidate="judge3" Display="Dynamic" ErrorMessage="Field Required" Text="*" ValidationGroup="AllValidators"></asp:RequiredFieldValidator>
-                    <asp:RegularExpressionValidator ID="judge3inputFieldValidator" runat="server" ControlToValidate="judge3" Display="Dynamic" ErrorMessage="Invalid Input" Text="*" ValidationGroup="AllValidators" ValidationExpression="\d{1,2}[,.]\d{1,2}|\d{1,2}"></asp:RegularExpressionValidator>
+                    <asp:RequiredFieldValidator ID="judge3FieldValidator" runat="server" ControlToValidate="judge3" Display="Dynamic" ErrorMessage="*Field Required" Text="*" ForeColor="Red" ValidationGroup="AllValidators"></asp:RequiredFieldValidator>
+                    <asp:RegularExpressionValidator ID="judge3inputFieldValidator" runat="server" ControlToValidate="judge3" Display="Dynamic" ErrorMessage="**Invalid Input" Text="**" ForeColor="Red" ValidationGroup="AllValidators" ValidationExpression="\d{1,2}[,.]\d{1,2}|\d{1,2}"></asp:RegularExpressionValidator>
 
                 </td>
                 <td class="auto-style2">
                     <asp:TextBox ID="judge4" runat="server"></asp:TextBox>
-                    <asp:RequiredFieldValidator ID="judge4FieldValidator" runat="server" ControlToValidate="judge4" Display="Dynamic" ErrorMessage="Field Required" Text="*" ValidationGroup="AllValidators"></asp:RequiredFieldValidator>
-                    <asp:RegularExpressionValidator ID="judge4lengthFieldValidator" runat="server" ControlToValidate="judge4" Display="Dynamic" ErrorMessage="Invalid Input" Text="*" ValidationGroup="AllValidators" ValidationExpression="\d{1,2}[,.]\d{1,2}|\d{1,2}"></asp:RegularExpressionValidator>
+                    <asp:RequiredFieldValidator ID="judge4FieldValidator" runat="server" ControlToValidate="judge4" Display="Dynamic" ErrorMessage="*Field Required" Text="*" ForeColor="Red" ValidationGroup="AllValidators"></asp:RequiredFieldValidator>
+                    <asp:RegularExpressionValidator ID="judge4lengthFieldValidator" runat="server" ControlToValidate="judge4" Display="Dynamic" ErrorMessage="**Invalid Input" Text="**" ForeColor="Red" ValidationGroup="AllValidators" ValidationExpression="\d{1,2}[,.]\d{1,2}|\d{1,2}"></asp:RegularExpressionValidator>
 
                 </td>
                 <td class="auto-style2">
                     <asp:TextBox ID="judge5" runat="server"></asp:TextBox>
-                     <asp:RequiredFieldValidator ID="judge5FieldValidator" runat="server" ControlToValidate="judge5" Display="Dynamic" ErrorMessage="Field Required" Text="*" ValidationGroup="AllValidators"></asp:RequiredFieldValidator>
-                    <asp:RegularExpressionValidator ControlToValidate="judge5" Display="Dynamic" ErrorMessage="Invalid Input" ID="judge5lengthFieldValidator" runat="server" Text="*" ValidationExpression="\d{1,2}[,.]\d{1,2}|\d{1,2}" ValidationGroup="AllValidators"></asp:RegularExpressionValidator>
+                    <asp:RequiredFieldValidator ID="judge5FieldValidator" runat="server" ControlToValidate="judge5" Display="Dynamic" ErrorMessage="*Field Required" Text="*" ForeColor="Red" ValidationGroup="AllValidators"></asp:RequiredFieldValidator>
+                    <asp:RegularExpressionValidator ControlToValidate="judge5" Display="Dynamic" ErrorMessage="**Invalid Input" ID="judge5lengthFieldValidator" runat="server" Text="**" ForeColor="Red"  ValidationGroup="AllValidators" ValidationExpression="\d{1,2}[,.]\d{1,2}|\d{1,2}"></asp:RegularExpressionValidator>
 
                 </td>
             </tr>
@@ -105,9 +105,9 @@
         <p>
             <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Laske" ValidationGroup="AllValidators" />
             &nbsp;
-            Pisteet: <asp:Label ID="Result" runat="server" Text=""></asp:Label>
+            Pisteet: <asp:Label ID="Result" runat="server" Text=""></asp:Label><asp:ValidationSummary ID="ValidationSummary" EnableClientScript="true"  runat="server" ShowSummary="True" ValidationGroup="AllValidators" DisplayMode="List" ForeColor="Red" />
                     
-                </p>
+                    
     </form>
 </body>
 </html>
